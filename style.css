@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 12px;
+}
+
+.container-fluid {
+    width: 100%;
+    height: 80px;
+    font-size: 1.5rem;
+    background-color: rgb(59, 10, 63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    border: none;
+    outline: none !important;
+    width: 50vw;
+    height: 1.8rem;
+    padding: 0 2rem;
+}
+
+#icon {
+    position: absolute;
+    margin-left: 90%;
+    margin-top: 27px;
+    cursor: pointer;
+}
+
+.change {
+    animation: transformIcon forwards;
+    animation-duration: 5s;
+    cursor: pointer;
+}
+
+@keyframes transformIcon {
+    0% {
+        margin-left: 90%;
+        margin-top: 27px;
+    }
+    40% {
+        margin-top: 50vh;
+        margin-left: 50%;
+        transform: scale(10);
+    }
+    100% {
+        margin-left: 17vw;
+        margin-top: 27px;
+    }
+}
